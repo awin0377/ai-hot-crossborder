@@ -1,0 +1,5 @@
+.workbuddy/
+*.pyc
+__pycache__/
+.DS_Store
+aihot-cross-border-dashboard.html

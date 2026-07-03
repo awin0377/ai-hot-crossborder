@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI HOT 跨境出海专能版 — 2026年7月4日晨报</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#070b14;--bg2:#0d1220;--card:#111827;--card-hover:#16203a;
+  --border:#1e293b;--text:#e2e8f0;--text2:#94a3b8;--text3:#64748b;
+  --cyan:#06b6d4;--indigo:#6366f1;--amber:#f59e0b;--emerald:#10b981;
+  --rose:#f43f5e;--violet:#8b5cf6;--sky:#0ea5e9;
+}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.hero{position:relative;padding:48px 24px 40px;text-align:center;overflow:hidden;
+  background:linear-gradient(135deg,#0a0e1a 0%,#0f172a 50%,#0a0e1a 100%);
+  border-bottom:1px solid var(--border)}
+.hero::before{content:'';position:absolute;top:-50%;left:-10%;width:120%;height:200%;
+  background:radial-gradient(ellipse at 30% 40%,rgba(99,102,241,.08) 0%,transparent 50%),
+             radial-gradient(ellipse at 70% 60%,rgba(6,182,212,.06) 0%,transparent 50%);
+  pointer-events:none}
+.hero-inner{position:relative;max-width:1100px;margin:0 auto}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;padding:5px 14px;border-radius:20px;
+  background:rgba(6,182,212,.1);border:1px solid rgba(6,182,212,.25);color:var(--cyan);
+  font-size:12px;font-weight:600;letter-spacing:1px;margin-bottom:16px}
+.hero-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.hero h1{font-size:28px;font-weight:800;letter-spacing:-.5px;margin-bottom:6px;
+  background:linear-gradient(90deg,#e2e8f0,#94a3b8);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero-date{font-size:15px;color:var(--text2);margin-bottom:28px}
+.hero-stats{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+.stat-chip{display:flex;flex-direction:column;align-items:center;gap:2px;padding:12px 20px;border-radius:12px;
+  background:var(--card);border:1px solid var(--border);min-width:100px;transition:.2s}
+.stat-chip:hover{border-color:var(--card-hover);transform:translateY(-2px)}
+.stat-chip .num{font-size:24px;font-weight:800;color:var(--cyan)}
+.stat-chip .label{font-size:11px;color:var(--text3);letter-spacing:.5px}
+.stat-chip.s1 .num{color:var(--cyan)}
+.stat-chip.s2 .num{color:var(--indigo)}
+.stat-chip.s3 .num{color:var(--amber)}
+.stat-chip.s4 .num{color:var(--emerald)}
+.stat-chip.s5 .num{color:var(--violet)}
+.stat-chip.total .num{color:var(--rose)}
+.nav{position:sticky;top:0;z-index:100;background:rgba(7,11,20,.92);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);padding:10px 0}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:0 16px}
+.nav a{padding:6px 16px;border-radius:8px;font-size:13px;font-weight:500;color:var(--text2);
+  border:1px solid transparent;transition:.2s;white-space:nowrap}
+.nav a:hover{color:var(--text);border-color:var(--border);background:var(--card)}
+.nav a .nav-emoji{margin-right:4px}
+.container{max-width:1100px;margin:0 auto;padding:0 16px}
+.section{padding:36px 0 8px}
+.section-header{display:flex;align-items:center;gap:10px;margin-bottom:20px;padding-bottom:10px;
+  border-bottom:1px solid var(--border)}
+.section-icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;
+  font-size:16px;flex-shrink:0}
+.section-header h2{font-size:17px;font-weight:700;color:var(--text)}
+.section-header .count{font-size:13px;color:var(--text3);margin-left:auto}
+.s1 .section-icon{background:rgba(6,182,212,.12);border:1px solid rgba(6,182,212,.3)}
+.s2 .section-icon{background:rgba(99,102,241,.12);border:1px solid rgba(99,102,241,.3)}
+.s3 .section-icon{background:rgba(245,158,11,.12);border:1px solid rgba(245,158,11,.3)}
+.s4 .section-icon{background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.3)}
+.s5 .section-icon{background:rgba(139,92,246,.12);border:1px solid rgba(139,92,246,.3)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px;padding-bottom:28px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px;
+  transition:.2s;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;transition:.2s;opacity:.6}
+.s1 .card::before{background:var(--cyan)}
+.s2 .card::before{background:var(--indigo)}
+.s3 .card::before{background:var(--amber)}
+.s4 .card::before{background:var(--emerald)}
+.s5 .card::before{background:var(--violet)}
+.card:hover{background:var(--card-hover);border-color:#2a3550;transform:translateY(-2px)}
+.card:hover::before{opacity:1;width:4px}
+.card-top{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.card-num{font-size:13px;font-weight:800;color:var(--text3);min-width:22px}
+.card-source{display:inline-block;font-size:11px;padding:2px 8px;border-radius:6px;
+  background:rgba(148,163,184,.1);color:var(--text2);border:1px solid rgba(148,163,184,.15);
+  max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card-time{font-size:11px;color:var(--text3);margin-left:auto;white-space:nowrap}
+.card h3{font-size:14.5px;font-weight:600;line-height:1.45;margin-bottom:8px;color:var(--text)}
+.card p{font-size:13px;color:var(--text2);line-height:1.55;margin-bottom:12px;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card-link{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:500;
+  color:var(--cyan);transition:.2s}
+.s2 .card-link{color:var(--indigo)}
+.s3 .card-link{color:var(--amber)}
+.s4 .card-link{color:var(--emerald)}
+.s5 .card-link{color:var(--violet)}
+.card-link:hover{text-decoration:underline;gap:6px}
+.footer{text-align:center;padding:32px 16px 40px;border-top:1px solid var(--border);margin-top:20px}
+.footer p{font-size:12px;color:var(--text3);margin-bottom:4px}
+.footer .total-line{font-size:14px;color:var(--text2);font-weight:600;margin-bottom:8px}
+.footer .source-line{font-size:11px}
+@media(max-width:640px){
+  .hero h1{font-size:22px}
+  .hero-stats{gap:8px}
+  .stat-chip{min-width:80px;padding:10px 14px}
+  .stat-chip .num{font-size:20px}
+  .grid{grid-template-columns:1fr}
+  .nav-inner{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;-webkit-overflow-scrolling:touch}
+  .nav a{flex-shrink:0}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge"><span class="dot"></span> AI HOT · 跨境出海专能版</div>
+    <h1>跨境出海 AI 应用晨报</h1>
+    <div class="hero-date">数据日期：2026-07-03（日报） · 生成时间：7月4日 04:42 北京时间</div>
+    <div class="hero-stats">
+      <div class="stat-chip total"><span class="num">24</span><span class="label">总条数</span></div>
+      <div class="stat-chip s1"><span class="num">6</span><span class="label">B2B获客工具</span></div>
+<div class="stat-chip s2"><span class="num">4</span><span class="label">SEO内容工厂</span></div>
+<div class="stat-chip s3"><span class="num">4</span><span class="label">视频AI分发</span></div>
+<div class="stat-chip s4"><span class="num">3</span><span class="label">广告多语言</span></div>
+<div class="stat-chip s5"><span class="num">7</span><span class="label">行业趋势</span></div>
+
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#s1"><span class="nav-emoji">🤖</span>B2B获客工具</a>
+<a href="#s2"><span class="nav-emoji">🔍</span>SEO内容工厂</a>
+<a href="#s3"><span class="nav-emoji">🎬</span>视频AI分发</a>
+<a href="#s4"><span class="nav-emoji">📢</span>广告多语言</a>
+<a href="#s5"><span class="nav-emoji">🌍</span>行业趋势</a>
+
+  </div>
+</nav>
+
+<div class="container">
+
+<section class="section s1" id="s1">
+  <div class="section-header">
+    <div class="section-icon">🤖</div>
+    <h2>版块1 · B2B自动化获客与出海工具</h2>
+    <span class="count">6 条</span>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">01</span>
+        <span class="card-source">MarkTechPost（RSS）</span>
+        <span class="card-time">未知时间</span>
+      </div>
+      <h3>阿里巴巴发布 Page Agent：开源 JavaScript 库实现网页 DOM 自然语言操控</h3>
+      <p>阿里巴巴发布 Page Agent，一个开源的 JavaScript 客户端库…</p>
+      <a href="https://www.marktechpost.com/2026/07/02/meet-alibabas-page-agent-a-javascript-in-page-gui-agent-that-controls-web-interfaces-with-natural-language-through-the-dom" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">02</span>
+        <span class="card-source">公众号：昆仑万维（天工）</span>
+        <span class="card-time">未知时间</span>
+      </div>
+      <h3>昆仑万维天工3.2发布Skywork Tags，AI智能体加入工作群聊</h3>
+      <p>昆仑万维天工3.2发布Skywork Tags，将AI智能体以团队成员身份接入Slack、飞书、钉钉、Discord…</p>
+      <a href="https://mp.weixin.qq.com/s/OqL6ID-mAel8XN-slYgXOA" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">03</span>
+        <span class="card-source">Claude：Blog（网页）</span>
+        <span class="card-time">未知时间</span>
+      </div>
+      <h3>Claude Enterprise 新增用量与成本分析及支出管控功能</h3>
+      <p>Claude Enterprise 推出更丰富的管理分析工具和成本控制功能…</p>
+      <a href="https://claude.com/blog/giving-admins-more-visibility-and-control-over-claude-usage-and-spend" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">04</span>
+        <span class="card-source">X：邵猛 (@shao__meng)</span>
+        <span class="card-time">未知时间</span>
+      </div>
+      <h3>Emil Kowalski 发布设计工程师 Skills，让 AI 编码工具具备 UI 动画审美</h3>
+      <p>Emil Kowalski 将多年 UI/动画原则沉淀为三个 Skill…</p>
+      <a href="https://x.com/shao__meng/status/2072484635955900792" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">05</span>
+        <span class="card-source">公众号：千问APP（阿里）</span>
+        <span class="card-time">未知时间</span>
+      </div>
+      <h3>千问团队朱达：C端Agent Harness的“多快好省”工程哲学与主动服务探索</h3>
+      <p>千问团队2026年1月上线通用复杂任务Agent（千问App胶囊入口）…</p>
+      <a href="https://mp.weixin.qq.com/s/l70iUM0bIpG9EdV9Px7QPQ" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">06</span>
+        <span class="card-source">AI HOT</span>
+        <span class="card-time">今天 02:51</span>
+      </div>
+      <h3>Fable 的判断力：Simon Willison 从 Claude Code 团队获得的效率技巧</h3>
+      <p>Simon Willison 在 AIE 上与 Claude Code 团队交流后建议…</p>
+      <a href="https://aihot.virxact.com/items/cmr5blxyu00ykslc7kiaaxqam" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section s2" id="s2">
+  <div class="section-header">
+    <div class="section-icon">🔍</div>
+    <h2>版块2 · 独立站SEO与AI内容工厂</h2>
+    <span class="count">4 条</span>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">07</span>
+        <span class="card-source">AI HOT</span>
+        <span class="card-time">昨天 20:25</span>
+      </div>
+      <h3>藏师傅PPT与Pencil结合使用技巧</h3>
+      <p>用户将藏师傅的AI生成PPT导入Pencil设计软件，可在Pencil中一次性浏览所有页面并手动调整AI常见的排版问题…</p>
+      <a href="https://aihot.virxact.com/items/cmr4wyzef05r3sll5oxo52f8j" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">08</span>
+        <span class="card-source">AI HOT</span>
+        <span class="card-time">昨天 17:59</span>
+      </div>
+      <h3>面向 Web 开发者的 Safari MCP 服务器</h3>
+      <p>Safari Technology Preview 247 推出 Safari MCP 服务器…</p>
+      <a href="https://aihot.virxact.com/items/cmr4s179804l5sll5u47j7031" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">09</span>
+        <span class="card-source">AI HOT</span>
+        <span class="card-time">昨天 14:16</span>
+      </div>
+      <h3>《Fable》通关指南：短绳AI编程法</h3>
+      <p>专业开发者经过一年多研究，总结出使用AI编码代理的&quot;短绳方法&quot;…</p>
+      <a href="https://aihot.virxact.com/items/cmr4kiyka02nhsll5t8kmi285" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">10</span>
+        <span class="card-source">AI HOT</span>
+        <span class="card-time">昨天 08:16</span>
+      </div>
+      <h3>Claude Fable 5 自主优化 AIHOT 网站 SEO/GEO 全记录</h3>
+      <p>作者用 Claude Fable 5 优化 AIHOT 网站的 SEO 与 GEO…</p>
+      <a href="https://aihot.virxact.com/items/cmr4768yq013qsl3g29wasjnp" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section s3" id="s3">
+  <div class="section-header">
+    <div class="section-icon">🎬</div>
+    <h2>版块3 · 视频AI生成与海外多渠道分发</h2>
+    <span class="count">4 条</span>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">11</span>
+        <span class="card-source">X：邵猛 (@shao__meng)</span>
+        <span class="card-time">未知时间</span>
+      </div>
+      <h3>browser-use 发布开源 AI 视频剪辑 Skill「video-use」</h3>
+      <p>browser-use 团队推出面向 Codex、Claude Code 等 AI 编码智能体的开源 Skill「vid…</p>
+      <a href="https://x.com/shao__meng/status/2072644710523691110" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">12</span>
+        <span class="card-source">AI HOT</span>
+        <span class="card-time">昨天 19:17</span>
+      </div>
+      <h3>生数科技发布 Vidu S1，推动视频生成迈向&quot;实时交互&quot;新时代</h3>
+      <p>7月3日，生数科技在2026全球数字经济大会上发布Vidu S1实时交互模型，支持实时视频通话和语音控制视频走向…</p>
+      <a href="https://aihot.virxact.com/items/cmr53vzsc07l3sll5x8mfscz3" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">13</span>
+        <span class="card-source">AI HOT</span>
+        <span class="card-time">昨天 16:55</span>
+      </div>
+      <h3>Wan Video 推出&quot;音乐伴舞&quot;新功能</h3>
+      <p>Wan Video 新功能：**音乐伴舞** 💃
+上传一个角色，添加一首歌曲…</p>
+      <a href="https://aihot.virxact.com/items/cmr4psupf03zwsll57yggswsf" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">14</span>
+        <span class="card-source">AI HOT</span>
+        <span class="card-time">昨天 12:56</span>
+      </div>
+      <h3>claude-real-video ─ 让任何大语言模型（LLM）都能观看视频</h3>
+      <p>claude-real-video 是一个开源工具，让大语言模型基于视频画面而非字幕进行理解…</p>
+      <a href="https://aihot.virxact.com/items/cmr4hb6x001txsll5jfiiy9u3" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section s4" id="s4">
+  <div class="section-header">
+    <div class="section-icon">📢</div>
+    <h2>版块4 · 智能广告投流与多语言营销</h2>
+    <span class="count">3 条</span>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">15</span>
+        <span class="card-source">Hacker News 热门（buzzing.cc 中文翻译）</span>
+        <span class="card-time">未知时间</span>
+      </div>
+      <h3>Kimi K2.7 Code 已在 GitHub Copilot 上正式发布</h3>
+      <p>Kimi K2.7 Code 开源权重模型已在 GitHub Copilot 中正式可用…</p>
+      <a href="https://github.blog/changelog/2026-07-01-kimi-k2-7-is-now-available-in-github-copilot" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">16</span>
+        <span class="card-source">AI HOT</span>
+        <span class="card-time">今天 03:19</span>
+      </div>
+      <h3>pxpipe：通过图像化压缩输入token降低Claude Code成本</h3>
+      <p>pxpipe是一个本地代理，将系统提示、工具文档和历史记录等密集文本渲染为PNG图像…</p>
+      <a href="https://aihot.virxact.com/items/cmr5cef1q017islc779xjrcy6" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">17</span>
+        <span class="card-source">AI HOT</span>
+        <span class="card-time">昨天 18:03</span>
+      </div>
+      <h3>JoyAI App 上线 UGC 数字人功能，用户可&quot;捏&quot;出专属虚拟玩伴</h3>
+      <p>JoyAI App 近日上线 UGC 数字人功能，用户只需上传一张照片即可生成专属虚拟数字分身…</p>
+      <a href="https://aihot.virxact.com/items/cmr53w14307lfsll5fo2cq53p" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section s5" id="s5">
+  <div class="section-header">
+    <div class="section-icon">🌍</div>
+    <h2>版块5 · 全球出海行业动态与AI趋势</h2>
+    <span class="count">7 条</span>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">18</span>
+        <span class="card-source">IT之家（RSS）</span>
+        <span class="card-time">未知时间</span>
+      </div>
+      <h3>AI 版支付宝开放公测，蚂蚁阿宝无需邀请码即可体验</h3>
+      <p>支付宝阿宝 AI 助手今日正式开放公测，iOS 和安卓用户可在应用商店或支付宝 App 搜索“阿宝”或“蚂蚁阿宝”直接体…</p>
+      <a href="https://www.ithome.com/0/971/469.htm" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">19</span>
+        <span class="card-source">The Decoder：AI News（RSS）</span>
+        <span class="card-time">未知时间</span>
+      </div>
+      <h3>Microsoft 成立“Frontier Company”，斥资 25 亿美元派驻 6000 名 AI 工程师到企业客户现场</h3>
+      <p>Microsoft 新设业务部门“Frontier Company”，拨款 25 亿美元…</p>
+      <a href="https://the-decoder.com/microsoft-launches-2-5-billion-frontier-company-to-embed-6000-ai-engineers-inside-enterprise-clients" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">20</span>
+        <span class="card-source">X：Testing Catalog (@testingcatalog)</span>
+        <span class="card-time">未知时间</span>
+      </div>
+      <h3>OpenAI提议美国政府持股5%估值426亿美元</h3>
+      <p>据Financial Times和CNBC报道，OpenAI提议向美国政府提供公司5%的股份…</p>
+      <a href="https://x.com/testingcatalog/status/2072585845542969583" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">21</span>
+        <span class="card-source">IT之家（RSS）</span>
+        <span class="card-time">未知时间</span>
+      </div>
+      <h3>花旗、Adobe等企业限制员工使用AI旗舰模型以控制成本</h3>
+      <p>据404 Media获取的内部资料，Atlassian、Adobe、亚马逊等六家企业正限制员工使用AI工具…</p>
+      <a href="https://www.ithome.com/0/971/937.htm" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">22</span>
+        <span class="card-source">IT之家（RSS）</span>
+        <span class="card-time">未知时间</span>
+      </div>
+      <h3>快手可灵AI获初始投资者20.28亿美元注资，投后估值180亿美元</h3>
+      <p>快手在港交所公告，21名初始投资者同意以138.24亿元人民币（20.28亿美元）现金注资北京可灵…</p>
+      <a href="https://www.ithome.com/0/971/954.htm" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">23</span>
+        <span class="card-source">AI HOT</span>
+        <span class="card-time">昨天 17:15</span>
+      </div>
+      <h3>国家网信办就《互联网信息服务管理办法》再次征求意见，首设&quot;智能信息服务&quot;专章规范AI服务</h3>
+      <p>7月3日，国家互联网信息办公室就《互联网信息服务管理办法（修订草案征求意见稿）》再次公开征求意见…</p>
+      <a href="https://aihot.virxact.com/items/cmr4rs02404h6sll50myozvz0" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-num">24</span>
+        <span class="card-source">AI HOT</span>
+        <span class="card-time">昨天 07:38</span>
+      </div>
+      <h3>扎克伯格称AI智能体开发速度未如预期</h3>
+      <p>Meta CEO 扎克伯格在本周内部全体会议上表示，AI 智能体的开发速度并未像高管们此前预期的那样加速…</p>
+      <a href="https://aihot.virxact.com/items/cmr46bjmz00x0sl3g5rj6sp46" target="_blank" rel="noopener noreferrer" class="card-link">阅读原文 →</a>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p class="total-line">共 24 条 · 5 个版块</p>
+  <p class="source-line">数据来源：AI HOT (aihot.virxact.com) · 日报日期：2026-07-03 · 过滤标准：跨境出海 / 外贸B2B / 独立站 / 海外营销强相关</p>
+  <p class="source-line">生成时间：7月4日 04:42 北京时间 · Powered by GitHub Actions</p>
+</div>
+
+<script>
+document.querySelectorAll('.nav a').forEach(link=>{
+  link.addEventListener('click',e=>{
+    e.preventDefault();
+    const target=document.querySelector(link.getAttribute('href'));
+    if(target){
+      const offset=target.offsetTop-60;
+      window.scrollTo({top:offset,behavior:'smooth'});
+    }
+  });
+});
+const sections=document.querySelectorAll('.section');
+const navLinks=document.querySelectorAll('.nav a');
+window.addEventListener('scroll',()=>{
+  let current='';
+  sections.forEach(sec=>{
+    if(window.scrollY>=sec.offsetTop-80) current=sec.id;
+  });
+  navLinks.forEach(link=>{
+    link.style.color='';
+    link.style.borderColor='';
+    link.style.background='';
+    if(link.getAttribute('href')==='#'+current){
+      link.style.color='var(--text)';
+      link.style.borderColor='var(--border)';
+      link.style.background='var(--card)';
+    }
+  });
+});
+</script>
+</body>
+</html>
