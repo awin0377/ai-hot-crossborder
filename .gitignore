@@ -1,5 +1,24 @@
-.workbuddy/
-*.pyc
+# 生成文件
+output-*.json
+dashboard-*.html
+target_tweets.json
+raw_tweets.json
+sent_news.json
+*.html.bak
+
+# 缓存/备份
+.codex-backups/
 __pycache__/
-.DS_Store
-aihot-cross-border-dashboard.html
+*.pyc
+/tmp/*
+*.bak
+
+# 敏感信息
+.env
+*.pem
+id_*
+
+# Mac 边缘节点投递的弹药 & 分步备份
+mac_inbox.json
+*.bak.apify
+*.bak.utm
